@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products – Simloc Technologies LTD</title>
+  <link rel="stylesheet" href="shared.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="Home.html" class="logo">
+        <span class="logo__icon"><i class="fas fa-microchip"></i></span>
+        <span class="logo__text">Simloc <span>Technologies</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="Home.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="products.html" class="nav__link active">Products</a></li>
+          <li><a href="Home.html#contact" class="nav__link nav__link--cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="section__eyebrow">In Stock</span>
+        <h1>Our Products</h1>
+        <p>Premium laptops and computers from trusted brands — available now at our Enugu store.</p>
+      </div>
+    </section>
+
+    <section class="section products-page">
+      <div class="container">
+
+        <!-- Filter bar -->
+        <div class="filter-bar" style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:2.5rem;">
+          <button class="filter-btn active" data-filter="all">All Products</button>
+          <button class="filter-btn" data-filter="acer">Acer</button>
+          <button class="filter-btn" data-filter="dell">Dell</button>
+          <button class="filter-btn" data-filter="hp">HP</button>
+          <button class="filter-btn" data-filter="lenovo">Lenovo</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+
+          <div class="product-card reveal" data-brand="acer">
+            <div class="product-card__img">
+              <img src="acer1.png" alt="Acer Laptop" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Acer</span>
+              <h3>Acer Laptop</h3>
+              <p class="product-card__price">₦220,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="acer">
+            <div class="product-card__img">
+              <img src="acer2.png" alt="Acer Laptop" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Acer</span>
+              <h3>Acer Laptop</h3>
+              <p class="product-card__price">₦250,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="acer">
+            <div class="product-card__img">
+              <img src="acer3.png" alt="Acer Laptop" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Acer</span>
+              <h3>Acer Laptop</h3>
+              <p class="product-card__price">₦320,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="acer">
+            <div class="product-card__img">
+              <img src="acer4.png" alt="Acer Laptop" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Acer</span>
+              <h3>Acer Laptop</h3>
+              <p class="product-card__price">₦290,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="dell">
+            <div class="product-card__img">
+              <img src="dell1.png" alt="Dell Laptop" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Dell</span>
+              <h3>Dell Laptop</h3>
+              <p class="product-card__price">₦280,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="dell">
+            <div class="product-card__img">
+              <img src="dell2.png" alt="Dell Laptop" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Dell</span>
+              <h3>Dell Laptop</h3>
+              <p class="product-card__price">₦310,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="lenovo">
+            <div class="product-card__img">
+              <img src="thinkpad1.jpg" alt="ThinkPad Laptop" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Lenovo</span>
+              <h3>ThinkPad Laptop</h3>
+              <p class="product-card__price">₦350,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="hp">
+            <div class="product-card__img">
+              <img src="elitebook1.webp" alt="HP EliteBook" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">HP</span>
+              <h3>HP EliteBook</h3>
+              <p class="product-card__price">₦300,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="other">
+            <div class="product-card__img">
+              <img src="9pum5ldj.png" alt="Laptop" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">In Stock</span>
+              <h3>Premium Laptop</h3>
+              <p class="product-card__price">Contact for Price</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA to Contact -->
+    <section class="section" style="background:var(--navy-2); text-align:center;">
+      <div class="container" style="max-width:620px;">
+        <span class="section__eyebrow">Need Help Choosing?</span>
+        <h2 class="section__title" style="margin-bottom:1rem;">Visit Us In Store</h2>
+        <p style="color:var(--text-muted); margin-bottom:2rem;">Not sure which laptop is right for you? Come in and our team will help you find the perfect match for your budget and needs.</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="tel:08062476570" class="btn btn--primary"><i class="fas fa-phone"></i> Call Us</a>
+          <a href="Home.html#contact" class="btn btn--ghost">Get Directions</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__icon"><i class="fas fa-microchip"></i></span>
+        <span class="logo__text">Simloc <span>Technologies</span></span>
+        <p>Your trusted tech partner in Enugu.</p>
+      </div>
+      <div class="footer__links">
+        <h5>Navigation</h5>
+        <a href="Home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+      </div>
+      <div class="footer__links">
+        <h5>Contact</h5>
+        <a href="tel:08062476570">08062476570</a>
+        <a href="mailto:simloctechnologies@yahoo.com">Email Us</a>
+        <span>110 Ogui Road, Enugu</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Simloc Technologies LTD. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+  <script>
+    // Product filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        productCards.forEach(card => {
+          const show = filter === 'all' || card.dataset.brand === filter;
+          card.style.display = show ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+  <style>
+    .filter-btn {
+      background: var(--navy-3);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--text-muted);
+      padding: 8px 20px;
+      border-radius: var(--radius-full);
+      font-size: 0.88rem;
+      font-weight: 500;
+      font-family: 'Sora', sans-serif;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: white;
+    }
+  </style>
+</body>
+</html>

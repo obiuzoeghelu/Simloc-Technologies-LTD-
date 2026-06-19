@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simloc Technologies LTD</title>
+  <link rel="stylesheet" href="shared.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="Home.html" class="logo">
+        <span class="logo__icon"><i class="fas fa-microchip"></i></span>
+        <span class="logo__text">Simloc <span>Technologies</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="Home.html" class="nav__link active">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="products.html" class="nav__link">Products</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__bg-grid"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="hero__eyebrow">Enugu's Tech Hub</span>
+          <h1 class="hero__title">Your One-Stop <span class="accent">Tech</span> Solution</h1>
+          <p class="hero__subtitle">Quality computers, accessories, expert repairs and software setup — all under one roof at 110 Ogui Road, Enugu.</p>
+          <div class="hero__meta">
+            <a href="tel:08062476570" class="hero__contact-link"><i class="fas fa-phone"></i> 08062476570</a>
+            <a href="mailto:simloctechnologies@yahoo.com" class="hero__contact-link"><i class="fas fa-envelope"></i> simloctechnologies@yahoo.com</a>
+            <span class="hero__contact-link"><i class="fas fa-map-marker-alt"></i> 110 Ogui Road, Opposite Stadium</span>
+          </div>
+          <div class="hero__actions">
+            <a href="products.html" class="btn btn--primary">Browse Products</a>
+            <a href="about.html" class="btn btn--ghost">Learn More</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__card-stack">
+            <div class="hero__stat-card hero__stat-card--1">
+              <i class="fas fa-laptop"></i>
+              <strong>500+</strong>
+              <span>Products Sold</span>
+            </div>
+            <div class="hero__stat-card hero__stat-card--2">
+              <i class="fas fa-users"></i>
+              <strong>1,000+</strong>
+              <span>Happy Customers</span>
+            </div>
+            <div class="hero__stat-card hero__stat-card--3">
+              <i class="fas fa-star"></i>
+              <strong>5+ Yrs</strong>
+              <span>Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint"><span></span></div>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="section services-preview" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">What We Do</span>
+          <h2 class="section__title">Our Services</h2>
+          <p class="section__sub">Everything you need for your technology journey</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-card__icon"><i class="fas fa-laptop"></i></div>
+            <h3>Computer & Laptop Sales</h3>
+            <p>Premium computers and laptops from trusted brands — Acer, Dell, HP, Lenovo and more.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><i class="fas fa-plug"></i></div>
+            <h3>Accessories & Peripherals</h3>
+            <p>Keyboards, mice, monitors, cables — the complete range for home and office setups.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><i class="fas fa-tools"></i></div>
+            <h3>Computer Repairs</h3>
+            <p>Fast, professional diagnosis and repair by expert technicians. We fix it right.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><i class="fas fa-download"></i></div>
+            <h3>Software Installation</h3>
+            <p>OS installs, productivity suites, antivirus and custom software — configured for you.</p>
+          </div>
+        </div>
+        <div class="section__cta">
+          <a href="services.html" class="btn btn--outline">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SLIDER -->
+    <section class="section products-preview" id="products">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">In Stock Now</span>
+          <h2 class="section__title">Featured Products</h2>
+          <p class="section__sub">A selection of what's available at our store today</p>
+        </div>
+
+        <div class="slider" id="slider">
+          <div class="slider__track" id="sliderTrack">
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="acer1.png" alt="Acer Laptop" loading="lazy">
+                </div>
+                <div class="slide-card__info">
+                  <h4>Acer Laptop</h4>
+                  <p class="slide-card__price">₦220,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="acer2.png" alt="Acer Laptop" loading="lazy">
+                </div>
+                <div class="slide-card__info">
+                  <h4>Acer Laptop</h4>
+                  <p class="slide-card__price">₦250,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="acer3.png" alt="Acer Laptop" loading="lazy">
+                </div>
+                <div class="slide-card__info">
+                  <h4>Acer Laptop</h4>
+                  <p class="slide-card__price">₦320,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="acer4.png" alt="Acer Laptop" loading="lazy">
+                </div>
+                <div class="slide-card__info">
+                  <h4>Acer Laptop</h4>
+                  <p class="slide-card__price">₦290,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="dell1.png" alt="Dell Laptop" loading="lazy">
+                </div>
+                <div class="slide-card__info">
+                  <h4>Dell Laptop</h4>
+                  <p class="slide-card__price">₦280,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="dell2.png" alt="Dell Laptop" loading="lazy">
+                </div>
+                <div class="slide-card__info">
+                  <h4>Dell Laptop</h4>
+                  <p class="slide-card__price">₦310,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="9pum5ldj.png" alt="Laptop" loading="lazy">
+                </div>
+                <div class="slide-card__info">
+                  <h4>Premium Laptop</h4>
+                  <p class="slide-card__price">Contact for Price</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider__btn slider__btn--prev" id="prevBtn" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider__btn slider__btn--next" id="nextBtn" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <div class="slider__dots" id="sliderDots"></div>
+        </div>
+
+        <div class="section__cta">
+          <a href="products.html" class="btn btn--primary">See All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT STRIP -->
+    <section class="about-strip">
+      <div class="container about-strip__inner">
+        <div class="about-strip__text">
+          <span class="section__eyebrow">Who We Are</span>
+          <h2>Powering Enugu with Technology Since Day One</h2>
+          <p>At Simloc Technologies LTD, we combine genuine products, honest pricing, and expert service to make tech accessible to every individual and business in Enugu State. We are not just a shop — we are your technology partner.</p>
+          <a href="about.html" class="btn btn--primary" style="margin-top:1.5rem">Our Story</a>
+        </div>
+        <div class="about-strip__stats">
+          <div class="stat"><strong>5+</strong><span>Years in Business</span></div>
+          <div class="stat"><strong>1,000+</strong><span>Customers Served</span></div>
+          <div class="stat"><strong>500+</strong><span>Products Sold</span></div>
+          <div class="stat"><strong>4</strong><span>Core Services</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Reach Us</span>
+          <h2 class="section__title">Get In Touch</h2>
+          <p class="section__sub">Visit our store or reach out directly — we're always available.</p>
+        </div>
+        <div class="contact-cards">
+          <a href="tel:08062476570" class="contact-card">
+            <div class="contact-card__icon"><i class="fas fa-phone"></i></div>
+            <h4>Call Us</h4>
+            <p>08062476570</p>
+          </a>
+          <a href="mailto:simloctechnologies@yahoo.com" class="contact-card">
+            <div class="contact-card__icon"><i class="fas fa-envelope"></i></div>
+            <h4>Email Us</h4>
+            <p>simloctechnologies@yahoo.com</p>
+          </a>
+          <div class="contact-card">
+            <div class="contact-card__icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h4>Visit Us</h4>
+            <p>110 Ogui Road, Enugu<br>Opposite Stadium</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card__icon"><i class="fas fa-clock"></i></div>
+            <h4>Hours</h4>
+            <p>Mon – Sat: 8am – 7pm<br>Sunday: 12pm – 5pm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__icon"><i class="fas fa-microchip"></i></span>
+        <span class="logo__text">Simloc <span>Technologies</span></span>
+        <p>Your trusted tech partner in Enugu.</p>
+      </div>
+      <div class="footer__links">
+        <h5>Navigation</h5>
+        <a href="Home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+      </div>
+      <div class="footer__links">
+        <h5>Contact</h5>
+        <a href="tel:08062476570">08062476570</a>
+        <a href="mailto:simloctechnologies@yahoo.com">Email Us</a>
+        <span>110 Ogui Road, Enugu</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Simloc Technologies LTD. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+  <script src="all (1).js"></script>
+</body>
+</html>
