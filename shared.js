@@ -18,17 +18,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('nav');
   if (hamburger && nav) {
     hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      nav.classList.toggle('open');
-      document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+      const isOpen = nav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      document.body.classList.toggle('nav-open', isOpen);
     });
     // Close on link click
     nav.querySelectorAll('.nav__link').forEach(link => {
       link.addEventListener('click', () => {
         hamburger.classList.remove('open');
         nav.classList.remove('open');
-        document.body.style.overflow = '';
+        document.body.classList.remove('nav-open');
       });
+    });
+    // Close on Escape key
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && nav.classList.contains('open')) {
+        hamburger.classList.remove('open');
+        nav.classList.remove('open');
+        document.body.classList.remove('nav-open');
+      }
+    });
+    // Close if window resizes past mobile breakpoint while open
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && nav.classList.contains('open')) {
+        hamburger.classList.remove('open');
+        nav.classList.remove('open');
+        document.body.classList.remove('nav-open');
+      }
     });
   }
 

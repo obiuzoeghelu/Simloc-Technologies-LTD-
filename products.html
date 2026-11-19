@@ -13,16 +13,16 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="Home.html" class="logo">
-        <span class="logo__icon"><i class="fas fa-microchip"></i></span>
+        <img src="simloclogo.png" alt="Simloc Technologies" class="logo__img">
         <span class="logo__text">Simloc <span>Technologies</span></span>
       </a>
       <nav class="nav" id="nav">
         <ul class="nav__list">
-          <li><a href="Home.html" class="nav__link">Home</a></li>
-          <li><a href="about.html" class="nav__link">About</a></li>
-          <li><a href="services.html" class="nav__link">Services</a></li>
-          <li><a href="products.html" class="nav__link active">Products</a></li>
-          <li><a href="Home.html#contact" class="nav__link nav__link--cta">Contact</a></li>
+          <li><a href="Home.html" class="nav__link"><i class="fas fa-home"></i>Home</a></li>
+          <li><a href="about.html" class="nav__link"><i class="fas fa-question-circle"></i>About</a></li>
+          <li><a href="services.html" class="nav__link"><i class="fas fa-wrench"></i>Services</a></li>
+          <li><a href="products.html" class="nav__link active"><i class="fas fa-shopping-cart"></i>Products</a></li>
+          <li><a href="Home.html#contact" class="nav__link nav__link--cta"><i class="fas fa-phone"></i>Contact</a></li>
         </ul>
       </nav>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -41,16 +41,91 @@
       </div>
     </section>
 
+    <section class="section products-preview">
+      <div class="container">
+        <span class="section__eyebrow">Featured</span>
+        <h2 class="section__title">Popular Picks</h2>
+        <div class="slider" id="productSlider">
+          <div class="slider__track">
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="laptops new/thinkpad2.jpg" alt="Lenovo ThinkPad Laptop">
+                </div>
+                <div class="slide-card__info">
+                  <h4>Lenovo ThinkPad</h4>
+                  <p class="slide-card__price">From ₦350,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="laptops new/elitebook2.png" alt="HP EliteBook Laptop">
+                </div>
+                <div class="slide-card__info">
+                  <h4>HP ZBook Workstation</h4>
+                  <p class="slide-card__price">From ₦485,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="laptops new/asus3.png" alt="ASUS VivoBook Pro">
+                </div>
+                <div class="slide-card__info">
+                  <h4>ASUS VivoBook Pro</h4>
+                  <p class="slide-card__price">From ₦375,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="laptops new/dell-xps.png" alt="Dell XPS 15">
+                </div>
+                <div class="slide-card__info">
+                  <h4>Dell XPS 15 Plus</h4>
+                  <p class="slide-card__price">From ₦445,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slide-card">
+                <div class="slide-card__img-wrap">
+                  <img src="laptops new/macbookpro16.png" alt="MacBook Pro 16">
+                </div>
+                <div class="slide-card__info">
+                  <h4>MacBook Pro 16"</h4>
+                  <p class="slide-card__price">From ₦1,250,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="slider__btn slider__btn--prev" type="button">&lt;</button>
+          <button class="slider__btn slider__btn--next" type="button">&gt;</button>
+          <div class="slider__dots"></div>
+        </div>
+      </div>
+    </section>
+
     <section class="section products-page">
       <div class="container">
 
         <!-- Filter bar -->
-        <div class="filter-bar" style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:2.5rem;">
+        <div class="filter-bar">
           <button class="filter-btn active" data-filter="all">All Products</button>
           <button class="filter-btn" data-filter="acer">Acer</button>
+          <button class="filter-btn" data-filter="asus">ASUS</button>
           <button class="filter-btn" data-filter="dell">Dell</button>
           <button class="filter-btn" data-filter="hp">HP</button>
           <button class="filter-btn" data-filter="lenovo">Lenovo</button>
+          <button class="filter-btn" data-filter="apple">Apple</button>
+          <button class="filter-btn" data-filter="usb">USB Drives</button>
+          <button class="filter-btn" data-filter="memory">Memory Cards</button>
+          <button class="filter-btn" data-filter="reader">Card Readers</button>
+          <button class="filter-btn" data-filter="ringlight">Ring Lights</button>
         </div>
 
         <div class="products-grid" id="productsGrid">
@@ -132,6 +207,39 @@
             </div>
           </div>
 
+          <div class="product-card reveal" data-brand="lenovo">
+            <div class="product-card__img">
+              <img src="thinkpad2.jpg" alt="ThinkPad X1 Laptop" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Lenovo</span>
+              <h3>ThinkPad X1</h3>
+              <p class="product-card__price">₦365,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="lenovo">
+            <div class="product-card__img">
+              <img src="thinkpad3.jpg" alt="ThinkPad T Series Laptop" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Lenovo</span>
+              <h3>ThinkPad T14</h3>
+              <p class="product-card__price">₦340,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="lenovo">
+            <div class="product-card__img">
+              <img src="thinkpad4.jpg" alt="ThinkPad E Series Laptop" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Lenovo</span>
+              <h3>ThinkPad E14</h3>
+              <p class="product-card__price">₦320,000</p>
+            </div>
+          </div>
+
           <div class="product-card reveal" data-brand="hp">
             <div class="product-card__img">
               <img src="elitebook1.webp" alt="HP EliteBook" loading="lazy">
@@ -143,6 +251,153 @@
             </div>
           </div>
 
+          <div class="product-card reveal" data-brand="hp">
+            <div class="product-card__img">
+              <img src="elitebook2.png" alt="HP EliteBook" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">HP</span>
+              <h3>HP EliteBook</h3>
+              <p class="product-card__price">₦315,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="asus">
+            <div class="product-card__img">
+              <img src="laptops new/asus1.png" alt="ASUS VivoBook" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">ASUS</span>
+              <h3>ASUS VivoBook 15</h3>
+              <p class="product-card__price">₦245,000</p>
+              <div class="product-specs">
+                <span class="spec-tag">15.6" FHD</span>
+                <span class="spec-tag">i5-1135G7</span>
+                <span class="spec-tag">8GB RAM</span>
+                <span class="spec-tag">512GB SSD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="asus">
+            <div class="product-card__img">
+              <img src="laptops new/asus2.png" alt="ASUS VivoBook" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">ASUS</span>
+              <h3>ASUS VivoBook 14</h3>
+              <p class="product-card__price">₦228,000</p>
+              <div class="product-specs">
+                <span class="spec-tag">14" FHD</span>
+                <span class="spec-tag">Ryzen 5</span>
+                <span class="spec-tag">8GB RAM</span>
+                <span class="spec-tag">256GB SSD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="asus">
+            <div class="product-card__img">
+              <img src="laptops new/asus3.png" alt="ASUS VivoBook Pro" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">ASUS</span>
+              <h3>ASUS VivoBook Pro 15</h3>
+              <p class="product-card__price">₦375,000</p>
+              <div class="product-specs">
+                <span class="spec-tag">15.6" OLED</span>
+                <span class="spec-tag">i7-1255U</span>
+                <span class="spec-tag">16GB RAM</span>
+                <span class="spec-tag">512GB SSD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="asus">
+            <div class="product-card__img">
+              <img src="laptops new/asus5.png" alt="ASUS ProArt Display" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">ASUS</span>
+              <h3>ASUS ProArt Designer</h3>
+              <p class="product-card__price">₦425,000</p>
+              <div class="product-specs">
+                <span class="spec-tag">15.6" 4K</span>
+                <span class="spec-tag">RTX 3050</span>
+                <span class="spec-tag">16GB RAM</span>
+                <span class="spec-tag">1TB SSD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="apple">
+            <div class="product-card__img">
+              <img src="laptops new/macbookpro16.png" alt="MacBook Pro 16" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Apple</span>
+              <h3>MacBook Pro 16"</h3>
+              <p class="product-card__price">₦1,250,000</p>
+              <div class="product-specs">
+                <span class="spec-tag">16" Liquid Retina</span>
+                <span class="spec-tag">M3 Pro</span>
+                <span class="spec-tag">16GB Unified Memory</span>
+                <span class="spec-tag">512GB SSD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="hp">
+            <div class="product-card__img">
+              <img src="laptops new/hp-workstation.png" alt="HP ZBook Workstation" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">HP</span>
+              <h3>HP ZBook G8 Workstation</h3>
+              <p class="product-card__price">₦485,000</p>
+              <div class="product-specs">
+                <span class="spec-tag">15.6" FHD</span>
+                <span class="spec-tag">i7-11800H</span>
+                <span class="spec-tag">32GB RAM</span>
+                <span class="spec-tag">RTX A2000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="dell">
+            <div class="product-card__img">
+              <img src="laptops new/dell-xps.png" alt="Dell XPS 15" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Dell</span>
+              <h3>Dell XPS 15 Plus</h3>
+              <p class="product-card__price">₦445,000</p>
+              <div class="product-specs">
+                <span class="spec-tag">15.3" OLED</span>
+                <span class="spec-tag">i7-1365U</span>
+                <span class="spec-tag">16GB RAM</span>
+                <span class="spec-tag">RTX 4060</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="lenovo">
+            <div class="product-card__img">
+              <img src="laptops new/lenovo-standard.png" alt="Lenovo IdeaPad" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Lenovo</span>
+              <h3>Lenovo IdeaPad 5</h3>
+              <p class="product-card__price">₦235,000</p>
+              <div class="product-specs">
+                <span class="spec-tag">15.6" FHD</span>
+                <span class="spec-tag">Ryzen 5</span>
+                <span class="spec-tag">8GB RAM</span>
+                <span class="spec-tag">512GB SSD</span>
+              </div>
+            </div>
+          </div>
+
           <div class="product-card reveal" data-brand="other">
             <div class="product-card__img">
               <img src="9pum5ldj.png" alt="Laptop" loading="lazy">
@@ -151,6 +406,61 @@
               <span class="product-card__badge">In Stock</span>
               <h3>Premium Laptop</h3>
               <p class="product-card__price">Contact for Price</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="usb">
+            <div class="product-card__img">
+              <img src="1117826-usb-853230_1920.png" alt="USB Flash Drive" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">USB</span>
+              <h3>USB Flash Drive</h3>
+              <p class="product-card__price">₦5,500</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="usb">
+            <div class="product-card__img">
+              <img src="istockphoto-1192619363-1024x1024.jpg" alt="High-Speed USB Drive" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">USB</span>
+              <h3>High-Speed USB Drive</h3>
+              <p class="product-card__price">₦6,200</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="memory">
+            <div class="product-card__img">
+              <img src="kieutruongphoto-memory-3879753_1920.jpg" alt="Memory Cards" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Memory</span>
+              <h3>Memory Card Kit</h3>
+              <p class="product-card__price">₦8,000</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="reader">
+            <div class="product-card__img">
+              <img src="jjuni-drive-1150982_1920.png" alt="Card Reader" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Reader</span>
+              <h3>Card Reader</h3>
+              <p class="product-card__price">₦6,500</p>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-brand="ringlight">
+            <div class="product-card__img">
+              <img src="istockphoto-1350092749-1024x1024.jpg" alt="Ring Light" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__badge">Ring Light</span>
+              <h3>Ring Light</h3>
+              <p class="product-card__price">₦18,000</p>
             </div>
           </div>
 
@@ -176,7 +486,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="logo__icon"><i class="fas fa-microchip"></i></span>
+        <span class="logo__icon"><img src="simloclogo.png" alt="Simloc Technologies" class="logo__img"></span>
         <span class="logo__text">Simloc <span>Technologies</span></span>
         <p>Your trusted tech partner in Enugu.</p>
       </div>
@@ -216,6 +526,72 @@
         });
       });
     });
+
+    // Product specs dropdowns
+    const specsByModel = {
+      'Acer Laptop': ['Intel Core i5', '8GB RAM', '512GB SSD', '14" Full HD display', 'Windows 11 Home'],
+      'Dell Laptop': ['Intel Core i7', '16GB RAM', '512GB SSD', '15.6" Full HD display', 'Windows 11 Home'],
+      'ThinkPad Laptop': ['Intel Core i5', '16GB RAM', '512GB SSD', '14" Full HD display', 'Windows 11 Pro'],
+      'HP EliteBook': ['Intel Core i7', '16GB RAM', '512GB SSD', '14" Full HD display', 'Windows 11 Pro'],
+      'Premium Laptop': ['Intel Core i5', '8GB RAM', '256GB SSD', '14" Full HD display', 'Windows 11 Home']
+    };
+
+    productCards.forEach(card => {
+      const title = card.querySelector('h3')?.innerText.trim();
+      const specs = title ? specsByModel[title] : null;
+      if (!specs) return;
+
+      const body = card.querySelector('.product-card__body');
+      const toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.className = 'product-spec-toggle';
+      toggle.innerText = 'View Specs';
+
+      const specsPanel = document.createElement('div');
+      specsPanel.className = 'product-specs';
+      specsPanel.hidden = true;
+      specsPanel.innerHTML = `<ul>${specs.map(item => `<li>${item}</li>`).join('')}</ul>`;
+
+      toggle.addEventListener('click', () => {
+        specsPanel.hidden = !specsPanel.hidden;
+        toggle.innerText = specsPanel.hidden ? 'View Specs' : 'Hide Specs';
+        toggle.classList.toggle('active', !specsPanel.hidden);
+      });
+
+      body.appendChild(toggle);
+      body.appendChild(specsPanel);
+    });
+
+    // Slider
+    const productSlider = document.querySelector('#productSlider');
+    if (productSlider) {
+      const track = productSlider.querySelector('.slider__track');
+      const slides = Array.from(productSlider.querySelectorAll('.slider__slide'));
+      const prevBtn = productSlider.querySelector('.slider__btn--prev');
+      const nextBtn = productSlider.querySelector('.slider__btn--next');
+      const dots = productSlider.querySelector('.slider__dots');
+      let activeIndex = 0;
+
+      const updateSlider = index => {
+        activeIndex = (index + slides.length) % slides.length;
+        track.style.transform = `translateX(-${activeIndex * 100}%)`;
+        productSlider.querySelectorAll('.slider__dot').forEach((dot, dotIndex) => {
+          dot.classList.toggle('active', dotIndex === activeIndex);
+        });
+      };
+
+      slides.forEach((slide, index) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'slider__dot';
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => updateSlider(index));
+        dots.appendChild(dot);
+      });
+
+      prevBtn.addEventListener('click', () => updateSlider(activeIndex - 1));
+      nextBtn.addEventListener('click', () => updateSlider(activeIndex + 1));
+    }
   </script>
   <style>
     .filter-btn {
@@ -236,6 +612,55 @@
       border-color: var(--blue);
       color: white;
     }
+
+    .product-spec-toggle {
+      margin-top: 1rem;
+      width: 100%;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--text);
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius);
+      font-size: 0.94rem;
+      cursor: pointer;
+      text-align: left;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition);
+    }
+    .product-spec-toggle.active {
+      background: rgba(26, 115, 232, 0.12);
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .product-specs {
+      margin-top: 0.75rem;
+      padding: 1rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+    .product-specs ul {
+      list-style: disc;
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+    .product-specs li {
+      margin-bottom: 0.5rem;
+    }
+    .disclaimer {
+       font-size: smaller;
+       color: lightgrey;
+       
+    }
   </style>
+  <p class="disclaimer">Disclaimer:Some information on the products may be inaccurate at the moment, varying from the names, descriptions, specifications etc. Please consider visiting or contacting the store before decision to purchase</p>
 </body>
 </html>
+<script src="all (1).js"></script>
+<script src="products.js"></script>
